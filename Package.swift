@@ -8,14 +8,13 @@ let package = Package(
     products: [
         .library(
             name: "zxcvbn-swift",
-            targets: ["ZxcvbnSwift"]),
+            targets: ["ZxcvbnObj"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "ZxcvbnSwift",
+            name: "ZxcvbnObj",
             dependencies: [],
-            path: "Sources/ZxcvbnSwift",
             exclude: ["Info.plist"],
             resources: [
                 .process("generated/adjacency_graphs.json"),
@@ -26,6 +25,10 @@ let package = Package(
                 .headerSearchPath("Public"),
                 .headerSearchPath("Internal")
             ]
+        ),
+        .target(
+            name: "ZxcvbnSwift",
+            dependencies: ["ZxcvbnObj"]
         )
     ]
 )
