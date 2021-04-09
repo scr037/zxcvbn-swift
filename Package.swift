@@ -17,7 +17,7 @@ let package = Package(
             dependencies: [],
             exclude: ["Info.plist"],
             resources: [
-                .copy("Resources")
+                .process("Resources")
             ],
             publicHeadersPath: ".",
             cSettings: [
