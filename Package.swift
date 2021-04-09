@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "zxcvbn-swift",
-            targets: ["ZxcvbnObj"]),
+            targets: ["ZxcvbnSwift"]),
     ],
     dependencies: [],
     targets: [
