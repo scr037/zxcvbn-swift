@@ -20,8 +20,8 @@ let package = Package(
             dependencies: [],
             exclude: ["Info.plist"],
             resources: [
-                .copy("adjacency_graphs.json"),
-                .copy("frequency_lists.json")
+                .copy("Resources/adjacency_graphs.json"),
+                .copy("Resources/frequency_lists.json")
             ],
             publicHeadersPath: ".",
             cSettings: [
