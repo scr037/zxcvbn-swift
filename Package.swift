@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "zxcvbn-swift",
+    name: "ZxcvbnSwift",
     platforms: [
         .iOS(.v11)
     ],
     products: [
         .library(
-            name: "zxcvbn-swift",
+            name: "ZxcvbnSwift",
             targets: ["ZxcvbnSwift"]),
     ],
     dependencies: [],
