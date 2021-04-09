@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "zxcvbn-swift",
+    platforms: [
+        .iOS(.v11)
+    ],
     products: [
         .library(
             name: "zxcvbn-swift",
@@ -17,12 +20,16 @@ let package = Package(
             dependencies: [],
             exclude: ["Info.plist"],
             resources: [
-                .process("Resources")
+                .copy("adjacency_graphs.json"),
+                .copy("frequency_lists.json")
             ],
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("Public"),
                 .headerSearchPath("Internal")
+            ],
+            linkerSettings: [
+                .linkedFramework("UIKit", .when(platforms: [.iOS]))
             ]
         )
     ]
