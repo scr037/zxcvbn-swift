@@ -17,8 +17,8 @@ let package = Package(
             dependencies: [],
             exclude: ["Info.plist"],
             resources: [
-                .process("generated/adjacency_graphs.json"),
-                .process("generated/frequency_lists.json")
+                .copy("generated/adjacency_graphs.json"),
+                .copy("generated/frequency_lists.json")
             ],
             publicHeadersPath: ".",
             cSettings: [
