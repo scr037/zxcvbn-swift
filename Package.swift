@@ -15,12 +15,15 @@ let package = Package(
         .target(
             name: "ZxcvbnSwift",
             dependencies: [],
+            path: "Sources/ZxcvbnSwift",
             exclude: ["Info.plist"],
             resources: [
                 .process("generated/adjacency_graphs.json"),
                 .process("generated/frequency_lists.json")
             ],
+            publicHeadersPath: "Public",
             cSettings: [
+                .headerSearchPath("Public"),
                 .headerSearchPath("Internal")
             ]
         )
