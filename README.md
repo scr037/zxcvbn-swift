@@ -3,7 +3,7 @@ This is a swift compatible implementation of the password strength checker [zxcv
 `zxcvbn-swift` is easier to integrate since it's compabile with Carthage and (hopefully soon) SPM. 
 
 # Installation
-Using [swift package manager](https://swift.org/package-manager/).
+Using [swift package manager](https://swift.org/package-manager/). Follow instructions [here](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app)
 
 ```
 https://github.com/scr037/zxcvbn-swift
