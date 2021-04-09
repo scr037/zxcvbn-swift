@@ -13,22 +13,18 @@ let package = Package(
     dependencies: [],
     targets: [
         .target(
-            name: "ZxcvbnObj",
+            name: "ZxcvbnSwift",
             dependencies: [],
             exclude: ["Info.plist"],
             resources: [
                 .process("generated/adjacency_graphs.json"),
                 .process("generated/frequency_lists.json")
             ],
-            publicHeadersPath: "Public",
+            publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("Public"),
                 .headerSearchPath("Internal")
             ]
-        ),
-        .target(
-            name: "ZxcvbnSwift",
-            dependencies: ["ZxcvbnObj"]
         )
     ]
 )
