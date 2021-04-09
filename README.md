@@ -1,6 +1,6 @@
 # zxcvbn-swift
 This is a swift compatible implementation of the password strength checker [zxcvbn](https://github.com/dropbox/zxcvbn) and a relies on the one specific contribution aimed for iOS. Check it out [here](https://github.com/dropbox/zxcvbn-ios).
-`zxcvbn-swift` is easier to integrate since it's compabile with Carthage and (hopefully soon) SPM. 
+`zxcvbn-swift` is easier to integrate since it's compabile with Swift Package Manager. 
 
 # Installation
 Using [swift package manager](https://swift.org/package-manager/). Follow instructions [here](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app).
