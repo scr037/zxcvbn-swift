@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "ZxcvbnSwift",
     platforms: [
-        .iOS(.v8)
+        .iOS(.v13)
     ],
     products: [
         .library(
